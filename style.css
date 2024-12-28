@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-/* Chatbot Container */
 .chatbot-container {
     margin: 3em auto;
     padding: 2.5em;
@@ -16,17 +15,16 @@ body {
     border-radius: 20px;
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.9);
     background: rgba(3, 18, 50, 0.95);
-    border: 1px solid #ff00ff; /* Bold neon magenta border */
+    border: 1px solid #ff00ff;
     backdrop-filter: blur(20px);
 }
 
-/* Chat Header */
 .chat-header {
     font-size: 2.8em;
     font-weight: 800;
     text-align: center;
     padding: 1.5em;
-    background: linear-gradient(145deg, #ff0080, #8000ff, #00ffff); /* Wild vibrant gradient */
+    background: linear-gradient(145deg, #ff0080, #8000ff, #00ffff);
     color: #ffeb3b;
     border-radius: 20px 20px 0 0;
     box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.6);
@@ -34,7 +32,6 @@ body {
     letter-spacing: 3px;
 }
 
-/* Chat Window */
 .chat-window {
     height: 400px;
     overflow-y: auto;
@@ -46,7 +43,6 @@ body {
     box-shadow: inset 0 0 30px rgba(5, 5, 80, 0.9);
 }
 
-/* Chat Input */
 .chat-input {
     display: flex;
     justify-content: space-between;
@@ -85,3 +81,52 @@ body {
     background: linear-gradient(135deg, #ff00ff, #4b0082);
     transform: scale(1.1);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .chatbot-container {
+        width: 80%;
+        padding: 2em;
+    }
+    .chat-header {
+        font-size: 2em;
+    }
+    .chat-window {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chatbot-container {
+        width: 90%;
+        padding: 1.5em;
+    }
+    .chat-header {
+        font-size: 1.8em;
+    }
+    .chat-input {
+        flex-direction: column;
+    }
+    .chat-input input {
+        width: 100%;
+    }
+    .chat-input button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-container {
+        width: 95%;
+        padding: 1em;
+    }
+    .chat-header {
+        font-size: 1.5em;
+    }
+    .chat-window {
+        height: 250px;
+    }
+}
+
